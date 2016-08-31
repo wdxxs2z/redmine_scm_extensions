@@ -1,2 +1,6 @@
 #map.connect ':controller/:action/:id'
-match 'projects/:id/scm_extensions/:action', :controller => 'scm_extensions'
+get 'projects/:id/scm_extensions/:action', :controller => 'scm_extensions'
+post 'projects/:id/scm_extensions/:action', :controller => 'scm_extensions'
+delete 'projects/:id/scm_extensions/:action', :controller => 'scm_extensions'
+patch 'projects/:id/scm_extensions/:action', :controller => 'scm_extensions'
+put 'projects/:id/scm_extensions/:action', :controller => 'scm_extensions'
